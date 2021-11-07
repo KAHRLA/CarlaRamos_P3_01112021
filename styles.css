@@ -6,7 +6,7 @@
     font-family: Roboto, sans-serif;
     margin: 0px;
   }
-    .logo
+    .logo-accueil
     {margin: 20px;
     display: flex;
     justify-content: center;
@@ -147,8 +147,8 @@
     .resto img{
       width:100%;
       height:200px;
-      }
-      .resto-img{
+  }
+    .resto-img{
     transform: translate(-0%, -0%)
     }
     .resto2-img {
@@ -159,7 +159,7 @@
     .resto3-img {
         
     transform: translate(-0%, -5%)
-        }
+    }
     .info  
     {
     position:absolute;
@@ -214,4 +214,65 @@ background-color: black;
   flex-direction: column;
   padding: 10px;
   color: white;
+}
+/*____________pages.html____________*/
+header p{
+ font-size: 28px;
+ font-weight:bolder;
+ font-family:shrikhand; 
+}
+.photo-profil{
+
+}
+
+ .conteneur-service h4{
+font-size:18px;
+border-bottom: solid 3px #99E2D0;
+width: 60px;
+}
+#section-menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #F2F2F2;
+  border-radius: left 25px;
+  border-radius:right 25px;
+}
+.corazon{
+  display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+.conteneur-service{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px;
+}
+.menu{
+  background-color: white;
+  box-shadow: #b3b3b3 0 5px 10px;
+  border:none;
+  border-radius: 20px;
+  margin: 15px;
+  padding: 10px;
+  width: 380px;
+  height: 60px;
+}
+.plat{
+  font-weight: bold;
+  margin: 5px;
+}
+.compliment{
+  margin: 5px;
+}
+.prix{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+.icon{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
 }
