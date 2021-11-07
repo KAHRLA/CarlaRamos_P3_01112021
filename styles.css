@@ -55,11 +55,10 @@
       background: linear-gradient(-5deg, #9356DC 20%, #FF79DA);
       box-shadow: #b3b3b3 0 5px 10px;
       color: #F2F2F2;
-      margin:40px;
+      margin: 40px;
       border: none;
       font-weight: bolder;
       padding:10px 20px;
-      
     }
     .restaurant-intro
     {display: flex;
@@ -124,12 +123,11 @@
       }
     /*retaurants*/
     #section-restaurations {
-     
-     background-color: #F2F2F2;
+      background-color: #F2F2F2;
+      border-radius: top 15px;
     }
     
     #conteneur-restaurants {
-     background-color: #F2F2F2;
      display: flex;
      flex-direction: column;
      justify-content: space-between;
@@ -168,10 +166,12 @@
      justify-content: flex-end; 
     width: 85%;
     border-radius: 5px;
+    
      }
      .info p{
       background-color: #99E2D0;
       padding:  5px;
+      color: black;
      }
     .description{
       color: black;
@@ -216,13 +216,25 @@ background-color: black;
   color: white;
 }
 /*____________pages.html____________*/
-header p{
- font-size: 28px;
- font-weight:bolder;
- font-family:shrikhand; 
-}
-.photo-profil{
 
+header a{
+  color: black;
+position: relative;
+top: 40px;
+padding: 20px;
+}
+header p  {
+ font-size: 38px;
+ font-weight: bold;
+ font-family : 'Shrikhand', cursif ;
+ display: flex;
+ justify-content: center;
+ padding: 15px 10px;
+ margin: 0px;
+}
+.photo-profil img{
+width:100%; 
+height: 250px;
 }
 
  .conteneur-service h4{
@@ -240,8 +252,11 @@ width: 60px;
 }
 .corazon{
   display: flex;
-    justify-content: flex-end;
-    margin-right: 10px;
+  justify-content: flex-end;
+  margin-right: 10px;
+  position: relative;
+  bottom: 60px;
+  padding: 20px;  
 }
 .conteneur-service{
   display: flex;
@@ -270,8 +285,12 @@ width: 60px;
   display: flex;
   justify-content: flex-end;
   margin-right: 10px;
+  position: relative;
+  bottom: 45px;
+  padding: 20px;
 }
-.icon{
+
+.icon :hover{
   display: flex;
   justify-content: flex-end;
   margin-right: 10px;
