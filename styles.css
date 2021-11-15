@@ -10,8 +10,7 @@ a {
   {
   display: flex;
   justify-content: center;
-  margin: 30px;
-  height:40px;
+  height:30px;
 }
 .recherche {
   display: flex;
@@ -72,7 +71,7 @@ a {
 .conteneur-fonctionnement, .bottun-filtre{
   align-items: center;
 }
-.bottun-filtre  {
+.bouton-filtre  {
   display: flex;
   align-items:center;
   border-radius: 22px;
@@ -83,11 +82,11 @@ a {
   height: 75px;
   margin: 30px;
 }
-.bottun-filtre i{color: gray;
+.bouton-filtre i{color: gray;
 }
-#bottun-filtre3 i{color: #9356DC;
+#bouton-filtre3 i{color: #9356DC;
 }
-.bottun-filtre .cercle {
+.bouton-filtre .cercle {
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -102,7 +101,7 @@ a {
  margin: 5px 0 0 0;
  left: -10px
 }
-.bottun-filtre:hover {
+.bouton-filtre:hover {
 background-color : #f0aedf;
 }
  /*retaurants*/
@@ -179,15 +178,28 @@ border-radius: top 15px;
 .corazon {
   display: flex;
   justify-content: flex-end;
-  margin-right: 10px;
   position: relative;
+  top: 5px;
+  z-index: 2;
+  margin-right: 20px;
+  color: black;
 }
-.corazon i{
-  text-decoration: none;
+.heart {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 45px;
+  z-index: 1;
+  margin-right: 20px;
+  color: black;
 }
-.corazon :hover a{
-  background-color: linear-gradient(-5deg, #9356DC 20%, #FF79DA);
+.black-heart i, .icon {
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+  color: transparent;
 }
+
 footer {
  padding:30px;   
  background-color: black;
@@ -216,7 +228,7 @@ footer {
 header a{
  color: black;
  position: relative;
- top: 40px;
+ top: 50px;
  padding: 20px;
 }
 header p  {
@@ -228,12 +240,20 @@ header p  {
  padding: 15px 10px;
  margin: 0px;
 }
-.photo-profil img{
-width:100%; 
-height: 250px;
-
+.photo-profil{
+    transform: translate(-0%, -0%);
+    height: 215px;
+    overflow: hidden;
+   
 }
-
+.photo-profil img{
+  width: 100%;
+  min-width: 220px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
  .conteneur-service h4{
 font-size:18px;
 border-bottom: solid 3px #99E2D0;
@@ -244,20 +264,24 @@ width: 60px;
   flex-direction: column;
   justify-content: space-between;
   background-color: #F2F2F2;
-  margin: 0px;
   border-radius: 25px 25px 0px 0px;
   position:relative;
-  Bottom: 30px;
+  bottom: 20px;
+  z-index:1 ;
+  font-family: Roboto, sans-serif;
   }
-  #section-menu h1{
+  #section-menu h1 {
     font-family: 'Shrikhand';
-    margin-left:10px
+   margin-left: 20px;
 }
 .conteneur-service{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 20px;
+}
+.conteneur-service h4{
+  font-weight :lighter ;
 }
 .menu{
   background-color: white;
@@ -274,18 +298,25 @@ width: 60px;
 }
 .compliment{
   margin: 5px;
+  font-size: 14px;
 }
 .prix{
   display: flex;
   justify-content: flex-end;
-  margin-right: 10px;
+  margin-right: 30px;
   position: relative;
   bottom: 45px;
   padding: 20px;
-}
-
-.icon :hover{
+  font-size: 16px;
+    font-weight: bold;
+} 
+.icon i
+{
+  padding-left: 10px;
+  border-radius: 0px 10px 10px 0px;
+  position:absolute;
+  z-index: 1;
   display: flex;
   justify-content: flex-end;
-  margin-right: 10px;
-}
+
+  }
