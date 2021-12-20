@@ -1,0 +1,58 @@
+  .informations-restaurant{
+    padding :$padding-text ;
+    display:flex;
+    flex-direction:row;
+  }
+  .informations-left{
+    width:90%;
+  }
+  .lieu{
+   color: black;
+   margin-left: 15px;
+   margin: 5px;
+  }
+  .corazon {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 5px;
+    z-index: 2;
+    margin-right: 20px;
+    color: black;
+   }
+   .heart {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 45px;
+    z-index: 1;
+    margin-right: 20px;
+    color: black;
+   }
+   .black-heart i, .icon{
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    color: transparent;
+    }
+  
+  
+  .prix{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    position: relative;
+    bottom: 45px;
+    padding: 20px;;
+    font-size: 16px;
+      font-weight: bold;
+  } 
+  .icon i
+  {display:flex;
+   justify-content:flex-end;
+    position:absolute;
+    z-index: 1;
+    padding-left:$padding-text ;
+    border-radius:0px 10px 10px 0px;
+ }   
+ 

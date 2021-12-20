@@ -7,7 +7,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:wght@200&display=swap" rel="feuilledestyle">
         <script src="https://kit.fontawesome.com/0351ededca.js" crossorigin="anonymous"></script>         
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="./public/css/style.css">
         <title>0h my food</title>  
     </head>
     <body id="selections">
@@ -23,14 +23,14 @@
      </div>
         <h1>Réservez le menu qui vous convient</h1>
         <P>Découvrez des restaurants d'exceptions séléctionnées par nos soins </P>
-        <button type="button" class="restaurant-intro" >
+        <button type="button" class="btn_intro" >
           Explorer nos restaurents
         </button>
         
     </aside>
     <section id="conteneur-fonctionnement">
     <h2> Fonctionnement</h2>
-    
+    <div class="filtres">
     <div class="bouton-filtre">
       <span class="cercle">
         1
@@ -54,6 +54,7 @@
       <i class="fas fa-store"></i>
          <p> Degustez au restaurant</p>
       </div>  
+    </div>
     </section>
     <article id="section-restaurations">
       <h2>Restaurants</h2>
@@ -62,7 +63,7 @@
               <div class="resto">
                 <div class="info">
                   <p>Nouveau</p>
-                  </div>
+                </div>
                 <div class="resto-img">
                   <img src="images/jay.jpg" alt="image-restaurant" />
                 </div>
@@ -132,24 +133,26 @@
                 </div>
                 </div>
                 </a>
-        </div>
-                </article>
-                <footer>
+            </div>
+          </article>
+                <footer class="footer">
+                  <div class="footer-content">
                   <div class="logo-footer">
                     <img src="images/ohmyfood@2x.svg" alt="logo du site">
                   </div>
                   <div class="conteneur-pied">
                     <i class="fas fa-utensils"></i>
                       <a href="#"> Proposer un restaurant </a>
-                      </div>
+                    </div>
                       <div class="conteneur-pied">
                         <i class="fas fa-hands-helping"></i>
                         <a href="#">Devenir partenaire </a>
                     </div>
                     <div class="contact">
                     <a href="#"> Mentions légales</a>
-                       <a href="#">Contact</a>
+                    <a href="mailto:ohmyfood@contact.com" >Contact</a>
                   </div>
+                </div>
                 </footer>
     </body>
 </html>

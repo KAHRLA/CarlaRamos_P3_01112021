@@ -1,0 +1,41 @@
+a{
+    text-decoration: none;
+}
+#selections{
+    font-family: $font-text;
+    margin: 0px;
+    padding: 0px;
+}
+   
+//recherche input
+#Belleville{
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+   padding: $padding-text;
+}
+header p{ 
+    font-size: 38px;
+    font-weight: bold;
+    font-family : $font-logo;
+} 
+
+#section-menu h1 {
+font-family: $font-logo;
+margin-left: 20px;
+}
+
+.plat{
+font-weight: bold;
+margin: 5px;
+}
+.compliment{
+    margin: 5px;
+    font-size: 14px;
+  }
+
+.description{
+    color: black;
+    font-weight: bold;
+    margin: 5px;
+  }

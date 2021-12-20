@@ -1,0 +1,108 @@
+@import '../Utils/variables';
+.logo-accueil {
+ display: flex;
+ justify-content: center;
+ margin: 20px;
+ height: 40px; 
+}
+.recherche {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align:center;
+  background: linear-gradient(#cccccc 0%, #e6e6e6 15%);
+  color: #333333;
+  border:none ;
+  width: 100%;
+  height: 50px;
+  margin-left: 0px 70px 0px;
+}
+.recherche input {
+  border: none;
+  background:transparent; 
+  color :#333333;
+}
+
+#introduction{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+   text-align: center; 
+   align-items: center;
+   background-color: $color-background-box ; 
+ }
+ #introduction h1 , p {
+   margin: 20px;
+ } 
+
+ .conteneur-fonctionnement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+   align-items: center;
+   padding: 30px;
+ }
+ .conteneur-fonctionnement ,h2 {
+   padding: 30px  20px 0px;  
+ }
+ .conteneur-fonctionnement, .bottun-filtre{
+   align-items: center;
+ }
+
+ .filtres{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+} 
+
+ .bouton-filtre  {
+   display: flex;
+   align-items:center;
+   border-radius: 22px;
+   background-color: $color-background-box  ;
+   box-shadow: $shadow;
+   color: black;
+   width: 80%;
+   height: 75px;
+   margin: 30px;
+ }
+ .bouton-filtre i{color: gray;
+}
+ #bouton-filtre3 i{color: $color-primary;
+ }
+ .bouton-filtre .cercle {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color:$color-primary;
+  position:relative;
+  z-index: 1;
+  color:white;
+ margin: 5px 0 0 0;
+ left: -10px;
+  
+}
+@media (min-width:$tablette ) {
+  .filtres{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+  } 
+  .bottun-filtre{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 90px;
+  height: 50px;
+   }
+  }
+  @media (min-width: $desktop) {
+    #conteneur-fonctionnement {
+      margin: 0 auto;
+      max-width: 1400px;
+
+
+    }
+  }

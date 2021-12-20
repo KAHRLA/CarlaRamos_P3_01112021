@@ -1,0 +1,514 @@
+.btn_intro {
+  justify-content: center;
+  border-radius: 30px;
+  background: linear-gradient(-5deg, #9356DC 20%, #FF79DA);
+  box-shadow: #b3b3b3 0 5px 10px;
+  color: white;
+  margin: 40px;
+  border: none;
+  font-weight: bolder;
+  padding: 20px 20px;
+  width: 50%;
+  margin: 50px auto;
+  /*
+      @mixin ligne{
+          @include colonne;
+          flex-direction: row;
+        }
+
+        @mixin flex-end{
+          display:flex;
+          justify-content:flex-end;
+        } 
+        @mixin  flex-center{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+
+        @mixin position-fixe { 
+            position:absolute;
+            z-index: 2;
+          }
+
+        @mixin position-relative {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @mixin colonne {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+  */
+}
+.btn_intro:hover {
+  background: linear-gradient(-5deg, #a16be0 20%, #ff93e1);
+  box-shadow: #999999 0 5px 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#selections {
+  font-family: "Roboto", "sans-serif";
+  margin: 0px;
+  padding: 0px;
+}
+
+#Belleville {
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px;
+}
+
+header p {
+  font-size: 38px;
+  font-weight: bold;
+  font-family: "Shrikhand", "cursif ";
+}
+
+#section-menu h1 {
+  font-family: "Shrikhand", "cursif ";
+  margin-left: 20px;
+}
+
+.plat {
+  font-weight: bold;
+  margin: 5px;
+}
+
+.compliment {
+  margin: 5px;
+  font-size: 14px;
+}
+
+.description {
+  color: black;
+  font-weight: bold;
+  margin: 5px;
+}
+
+header a {
+  color: black;
+  position: relative;
+  top: 50px;
+  padding: 20px;
+}
+
+header p {
+  display: flex;
+  justify-content: center;
+  padding: 15px 10px;
+  margin: 0px;
+}
+
+.photo-profil {
+  transform: translate(0%, 0%);
+  height: 215px;
+  overflow: hidden;
+}
+
+.photo-profil img {
+  width: 100%;
+  min-width: 220px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo-accueil {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  height: 40px;
+}
+
+.recherche {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(#cccccc 0%, #e6e6e6 15%);
+  color: #333333;
+  border: none;
+  width: 100%;
+  height: 50px;
+  margin-left: 0px 70px 0px;
+}
+
+.recherche input {
+  border: none;
+  background: transparent;
+  color: #333333;
+}
+
+#introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: #F2F2F2;
+}
+
+#introduction h1, p {
+  margin: 20px;
+}
+
+.conteneur-fonctionnement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.conteneur-fonctionnement, h2 {
+  padding: 30px 20px 0px;
+}
+
+.conteneur-fonctionnement, .bottun-filtre {
+  align-items: center;
+}
+
+.filtres {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bouton-filtre {
+  display: flex;
+  align-items: center;
+  border-radius: 22px;
+  background-color: #F2F2F2;
+  box-shadow: #b3b3b3 0 5px 10px;
+  color: black;
+  width: 80%;
+  height: 75px;
+  margin: 30px;
+}
+
+.bouton-filtre i {
+  color: gray;
+}
+
+#bouton-filtre3 i {
+  color: #9356DC;
+}
+
+.bouton-filtre .cercle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  position: relative;
+  z-index: 1;
+  color: white;
+  margin: 5px 0 0 0;
+  left: -10px;
+}
+
+@media (min-width: 768px) {
+  .filtres {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .bottun-filtre {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 90px;
+    height: 50px;
+  }
+}
+@media (min-width: 1401px) {
+  #conteneur-fonctionnement {
+    margin: 0 auto;
+    max-width: 1400px;
+  }
+}
+#section-restaurations {
+  background-color: #F2F2F2;
+  border-radius: top 15px;
+}
+
+#conteneur-restaurants {
+  margin: 0px;
+}
+
+.resto {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: #b3b3b3 0 5px 10px;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.resto img {
+  width: 100%;
+}
+
+.resto-img {
+  transform: translate(0%, 0%);
+  height: 215px;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.resto-img img {
+  width: 100%;
+  min-width: 220px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.info {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-end;
+  width: 85%;
+  border-radius: 5px;
+}
+
+.info p {
+  background-color: #99E2D0;
+  padding: 5px;
+  color: black;
+}
+
+@media (min-width: 768px) {
+  #conteneur-restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .resto-img {
+    width: 350px;
+    overflow: hidden;
+  }
+
+  .resto-img img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .info {
+    width: 25%;
+  }
+
+  .conteneur-service h4 {
+    font-size: 18px;
+    border-bottom: solid 3px #99E2D0;
+    width: 60px;
+  }
+
+  #section-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    margin: 0px;
+    border-radius: 25px 25px 0px 0px;
+    position: relative;
+    Bottom: 20px;
+    font-family: "Roboto", "sans-serif";
+  }
+
+  #section-menu h1 {
+    font-family: "Shrikhand", "cursif ";
+    margin-left: 10px;
+  }
+
+  .conteneur-service {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+  }
+
+  .menu {
+    background-color: white;
+    box-shadow: #b3b3b3 0 5px 10px;
+    border: none;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 20px;
+    height: 80px;
+  }
+}
+@media (min-width: 1024px) {
+  #conteneur-restaurants {
+    margin: 0 auto;
+    max-width: 1400px;
+  }
+}
+@media (min-width: 768px) {
+  #section-menu {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-between;
+  }
+
+  .conteneur-service {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .conteneur-service h4 {
+    margin: 30px 0 10px 0;
+    border-bottom: solid 3px #99E2D0;
+    width: 60px;
+  }
+
+  .menu {
+    width: 100%;
+    height: 30px;
+  }
+}
+h4 span {
+  border-bottom: solid 3px #99E2D0;
+}
+
+.informations-restaurant {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.informations-left {
+  width: 90%;
+}
+
+.lieu {
+  color: black;
+  margin-left: 15px;
+  margin: 5px;
+}
+
+.corazon {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: 5px;
+  z-index: 2;
+  margin-right: 20px;
+  color: black;
+}
+
+.heart {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 45px;
+  z-index: 1;
+  margin-right: 20px;
+  color: black;
+}
+
+.black-heart i, .icon {
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  color: transparent;
+}
+
+.prix {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
+  position: relative;
+  bottom: 45px;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.icon i {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  z-index: 1;
+  padding-left: 10px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+footer {
+  background-color: black;
+  padding: 10px;
+}
+
+.footer a, .footer i {
+  color: white;
+}
+
+.logo-footer img {
+  width: 30%;
+  margin: 5px;
+}
+
+.conteneur-pied {
+  font-weight: 700;
+  margin: 10px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+@media (min-width: 768px) {
+  footer {
+    align-items: center;
+    height: 100px;
+    display: flex;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .logo-footer img {
+    width: 50%;
+    margin-left: 30px;
+    margin-top: 15px;
+  }
+
+  .conteneur-pied, .contact {
+    display: initial;
+    align-items: flex-start;
+    padding-right: 90px;
+  }
+
+  .contact {
+    margin: 10px;
+  }
+}
+@media (min-width: 1401px) {
+  .footer .contact {
+    margin: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
