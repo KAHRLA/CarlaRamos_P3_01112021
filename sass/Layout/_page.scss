@@ -62,7 +62,6 @@
    background-color: $color-background-box  ;
    box-shadow: $shadow;
    color: black;
-   width: 80%;
    height: 75px;
    margin: 30px;
  }
@@ -102,7 +101,8 @@
     #conteneur-fonctionnement {
       margin: 0 auto;
       max-width: 1400px;
-
-
+    }
+    .bouton-filtre {
+      width: 30%;
     }
   }

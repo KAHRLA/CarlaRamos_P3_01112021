@@ -1,5 +1,6 @@
 a{
     text-decoration: none;
+    width: 50%;
 }
 #selections{
     font-family: $font-text;
@@ -13,6 +14,7 @@ a{
     font-weight: 600;
     font-size: 14px;
    padding: $padding-text;
+   width: 105px;
 }
 header p{ 
     font-size: 38px;
