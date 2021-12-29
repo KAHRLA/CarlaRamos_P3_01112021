@@ -1,8 +1,9 @@
 footer {
   background-color: black;
-  padding: 10px;
+  padding: $padding-text;
  
  }
+ 
 .footer a, .footer i  {
  color: white;
   }
@@ -16,11 +17,13 @@ footer {
    margin: $padding-text;
    }
    
-  .contact {
+  .contact a {
    display: flex;
    flex-direction: column;
-   margin:$padding-text;
+   justify-content: space-between;
+   margin:$padding-text;  
  }
+ 
  @media (min-width: $tablette) {
   footer {
   align-items: center;
@@ -36,21 +39,17 @@ footer {
  {
   width: 50%;
   margin-left: 30px;
-margin-top: 15px;
+  margin-top: 15px;
  }
- .conteneur-pied,   .contact {
+ .conteneur-pied,   .contact a{
    display: initial;
  align-items: flex-start;
- padding-right: 90px;
+ padding-right: 70px;
  }
- .contact{ 
-  margin: $padding-text;
-}
    }
 
   @media (min-width:$desktop ) {
-     .footer .contact{
-      margin:$padding-text;
-      
+     .contact a {
+      margin: 0;
     }
   }
