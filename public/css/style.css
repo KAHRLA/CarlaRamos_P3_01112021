@@ -198,6 +198,10 @@ header p {
   margin: 30px;
 }
 
+.bouton-filtre:hover {
+  background-color: #f0d5e8;
+}
+
 .bouton-filtre i {
   color: gray;
 }
@@ -314,6 +318,11 @@ header p {
   justify-content: space-between;
 }
 
+.menu {
+  height: 45px;
+  width: 280px;
+}
+
 h4 span {
   border-bottom: solid 3px #99E2D0;
 }
@@ -400,7 +409,8 @@ h4 span {
   }
 
   .menu {
-    width: 100%;
+    width: 1200px;
+    height: 60px;
   }
 }
 .informations-restaurant {
