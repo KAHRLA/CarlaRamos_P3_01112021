@@ -5,50 +5,19 @@
     background: linear-gradient(-5deg, $color-primary 20%, $color-secondary );
     box-shadow: $shadow ;
     color: white;
-    margin: 40px;
+    margin: 50px;
     border: none; 
     font-weight: bolder;
     padding:20px 20px;
-    width:50%;
+    width:60%;
     margin: 50px auto;
     
     &:hover {
     background: $background-color-clear;
     box-shadow: $shadow-color-clear;
-    }/*
-    @mixin ligne{
-        @include colonne;
-        flex-direction: row;
-      }
-    
-      @mixin flex-end{
-        display:flex;
-        justify-content:flex-end;
-      } 
-      @mixin  flex-center{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      
-      
-      @mixin position-fixe { 
-          position:absolute;
-          z-index: 2;
-        }
-        
-      @mixin position-relative {
-          position: relative;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-      }
-      
-      @mixin colonne {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-*/
- }
+    }
+}
+@mixin btn_commande {
+    width:$medium;
+} 
 

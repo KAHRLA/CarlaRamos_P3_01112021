@@ -1,4 +1,19 @@
-.btn_intro {@include btn_intro; 
+@import '../Utils/variables';
+.btn_intro{@include btn_intro; 
 }
 
- 
+@media (min-width: $desktop){
+#btn_commande {@include btn_commande;
+}
+.btn_intro{
+width:$medium;  
+}
+}
+
+@media (min-width: $tablette){
+    #btn_commande {@include btn_commande;
+    }
+.btn_intro{
+width:$medium ;  
+}
+}

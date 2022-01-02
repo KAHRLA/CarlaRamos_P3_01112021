@@ -1,5 +1,5 @@
-//page d'accueil
-// Partie mobile COMMUMNE
+/*page d'accueil*/
+/* Partie mobile COMMUMNE*/
 #section-restaurations {
   background-color: $color-background-box;
   border-radius: top 15px;
@@ -53,36 +53,6 @@
   padding: 5px;
   color: black;
 }
-.menu {
-  background-color: white;
-  box-shadow: $shadow;
-  border: none;
-  border-radius: $padding-20;
-  margin: 15px;
-  padding: $padding-20;
-
-}
-
-.menu .display-flex{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.menu{
-  height: 45px;
-  width: 280px;
-
-}
-h4 span{
-  border-bottom: solid 3px $color-tertiary;
-}
-
-#section-menu {
-  background-color: $color-background-box;
-  margin: 0px;
-  border-radius: 25px 25px 0px 0px;
-  font-family: $font-text;
-}
 @media (min-width: $tablette) {
   #conteneur-restaurants {
     display: flex;
@@ -104,8 +74,38 @@ h4 span{
   .info {
     width: 25%;
   }
-  
-  // pages restaurants
+  }
+ /* pages restaurants*/
+/* Partie mobile */
+.menu {
+  background-color: white;
+  box-shadow: $shadow;
+  border: none;
+  border-radius: $padding-20;
+  margin: 15px;
+  padding: $padding-20;
+}
+.menu .display-flex{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+.menu{
+  height: 45px;
+  width: 85%;
+ 
+}
+h4 span{
+  border-bottom: solid 3px $color-tertiary;
+  margin: 10px;
+}
+
+#section-menu {
+  background-color: $color-background-box;
+  margin: 0px;
+  border-radius: 25px 25px 0px 0px;
+  font-family: $font-text;
+}  
   .conteneur-service h4 {
     font-size: 18px;
     border-bottom: solid 3px $color-tertiary;
@@ -130,34 +130,42 @@ h4 span{
   .conteneur-service {
     margin: $padding-20;
   }
-  }
-  @media (min-width: 1024px) {
-    #conteneur-restaurants {
-      margin: 0 auto;
-      max-width: 1400px;
-    }
-  }
-  
   @media (min-width: $tablette) {
+   
     #section-menu {
       display: flex;
-      flex-direction: wrap;
+      flex-wrap: wrap;
       justify-content: space-between;
     }
   .conteneur-service {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-   
+   flex-wrap:wrap;
+    justify-content:space-between;
   }
+
   .conteneur-service h4 {
     margin: 30px 0 10px 0;
     border-bottom: solid 3px $color-tertiary;
-    width: 60px;
-
+   }
+  .menu {
+    width: 290px;
+    height: 50px;
+   
+}
+}
+@media (min-width: 1024px) {
+  #conteneur-restaurants {
+    margin: 0 auto;
+    max-width: 1400px;
   }
   .menu {
-    width: 1200px;
-    height: 60px;
+    width: 250px;
+    height: 50px; 
 }
+}
+@media (min-width: $desktop)
+{
+.menu{
+width: 390px;
+  }
 }

@@ -4,7 +4,7 @@
     flex-direction:row;
   }
   .informations-left{
-    width:90%;
+    width: 100%;
   }
   .lieu{
    color: black;
@@ -40,10 +40,10 @@
   .prix{
     display: flex;
     justify-content: flex-end;
-    margin-right: 30px;
+    margin-right: 0;
     position: relative;
     bottom: 45px;
-    padding: 20px;;
+    padding: 20px;
     font-size: 16px;
       font-weight: bold;
   } 
