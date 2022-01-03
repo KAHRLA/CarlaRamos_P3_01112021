@@ -1,4 +1,4 @@
-  .informations-restaurant{
+.informations-restaurant{
     padding :$padding-text ;
     display:flex;
     flex-direction:row;
@@ -11,7 +11,7 @@
    margin-left: 15px;
    margin: 5px;
   }
-  .corazon {
+  .white-heart {
     display: flex;
     justify-content: flex-end;
     position: relative;
@@ -19,23 +19,45 @@
     z-index: 2;
     margin-right: 20px;
     color: black;
-   }
+    & :hover {
+      opacity: 0;
+      color: #FF79DA;
+      
+      }
+    }
+    .black-heart i, .icon{
+      position: relative;
+      z-index: 1;
+      opacity: 1;
+      color: transparent;
+      }
+      .white-heart:hover + .black-heart i{
+    background: linear-gradient( #FF79DA, #9356DC,);
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition:all 1000ms ease-in-out ;
+   
+    & :hover{ 
+    opacity: 1;
+    transform: translate(50%) scale(2.5);
+   
+  }
+  }
    .heart {
     display: flex;
     justify-content: flex-end;
-    position: relative;
+    position: relative; 
     bottom: 45px;
     z-index: 1;
     margin-right: 20px;
     color: black;
-   }
-   .black-heart i, .icon{
-    position: relative;
-    z-index: 1;
+
+   & :hover {
     opacity: 0;
-    color: transparent;
+    color: #9356DC;
     }
-  
+    }
   
   .prix{
     display: flex;

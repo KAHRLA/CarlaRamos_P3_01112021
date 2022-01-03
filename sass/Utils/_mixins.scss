@@ -20,4 +20,18 @@
 @mixin btn_commande {
     width:$medium;
 } 
+@mixin corazon {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+ }
 
+ @mixin heart {
+    display: flex;
+    justify-content: flex-end;
+    position: relative; 
+    &:hover { 
+        opacity: 0;
+        color: #9356DC;
+ }
+ }
