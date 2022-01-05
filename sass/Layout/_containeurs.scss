@@ -84,6 +84,7 @@
   border-radius: $padding-20;
   margin: 15px;
   padding: $padding-20;
+  
 }
 .menu .display-flex{
   display: flex;
@@ -93,6 +94,7 @@
 .menu{
   height: 45px;
   width: 85%;
+  overflow: hidden;
  
 }
 h4 span{
@@ -150,6 +152,7 @@ h4 span{
   .menu {
     width: 290px;
     height: 50px;
+    overflow: hidden;
    
 }
 }
@@ -161,11 +164,13 @@ h4 span{
   .menu {
     width: 250px;
     height: 50px; 
+    overflow: hidden;
 }
 }
 @media (min-width: $desktop)
 {
 .menu{
 width: 390px;
+overflow: hidden;
   }
 }

@@ -330,6 +330,7 @@ header p {
 .menu {
   height: 45px;
   width: 85%;
+  overflow: hidden;
 }
 
 h4 span {
@@ -392,6 +393,7 @@ h4 span {
   .menu {
     width: 290px;
     height: 50px;
+    overflow: hidden;
   }
 }
 @media (min-width: 1024px) {
@@ -403,11 +405,13 @@ h4 span {
   .menu {
     width: 250px;
     height: 50px;
+    overflow: hidden;
   }
 }
 @media (min-width: 1401px) {
   .menu {
     width: 390px;
+    overflow: hidden;
   }
 }
 .informations-restaurant {
@@ -437,7 +441,6 @@ h4 span {
 }
 .white-heart :hover {
   opacity: 0;
-  color: #FF79DA;
 }
 
 .black-heart i, .icon {
@@ -448,15 +451,16 @@ h4 span {
 }
 
 .white-heart:hover + .black-heart i {
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(to top, #FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
-  opacity: 0;
-  transition: all 1000ms ease-in-out;
+  opacity: 1;
+  transform: scale(1.5);
+  transition: all 900ms ease-in-out;
 }
 .white-heart:hover + .black-heart i :hover {
   opacity: 1;
-  transform: translate(50%) scale(2.5);
+  transform: scale(4.5);
 }
 
 .heart {
@@ -465,12 +469,8 @@ h4 span {
   position: relative;
   bottom: 45px;
   z-index: 1;
-  margin-right: 20px;
+  margin-right: 40px;
   color: black;
-}
-.heart :hover {
-  opacity: 0;
-  color: #9356DC;
 }
 
 .prix {
@@ -491,6 +491,11 @@ h4 span {
   z-index: 1;
   padding-left: 10px;
   border-radius: 0px 10px 10px 0px;
+}
+
+.menu:hover, .icon {
+  background-color: #99E2D0;
+  color: white;
 }
 
 footer {
