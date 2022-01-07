@@ -12,47 +12,56 @@
    margin-left: 15px;
    margin: 5px;
   }
-  .white-heart  {
+  
+  
+  .white-heart i {
     display: flex;
     justify-content: flex-end;
     position: relative;
     top: 5px;
-    z-index: 2;
-    margin-right: 20px;
-    color: black;
-     & :hover {
-      opacity: 0;
-      }
+    z-index: 1;
+    color:black;
+    transform:  scale(1.5);
+    
     }
-    .black-heart i, .icon{
-      position: relative;
-      z-index: 1;
-      opacity: 1;
+    .black-heart i{
+     display: flex;
+     justify-content: flex-end;
+      position: absolute;
+      bottom: 40px;
+      z-index: 2;
+      opacity: 2;
       color: transparent;
+     
       }
       .white-heart:hover + .black-heart i{
     background: linear-gradient(to top, $color-secondary,$color-primary, );
     background-clip: text;
     -webkit-background-clip: text;
-    opacity:1;
-    transform: scale(1.5);
-    transition:all 900ms ease-in-out ;
-   
+    opacity:2;
+    transform: scale(1.2);
+    transition:all 400ms ease-in-out ;
     & :hover{ 
-    opacity: 1;
-    transform:  scale(4.5);
+    opacity:0;
+    transform:  scale(1.5);
     }
   }
-   .heart {
+  .heart {
     display: flex;
     justify-content: flex-end;
-    position: relative;
-    bottom: 45px;
-    z-index: 1;
-    margin-right: 40px;
-    color: black;
-   }
-
+    position: absolute;
+    right: 20px;
+    margin-top: 20px;
+      color: black;
+      &:hover + .black-heart i{
+        display: flex;
+    justify-content: flex-end;
+       position: relative;
+        top: 0;
+        margin-right: 30px;
+         z-index: 2;
+          }
+         }
   .prix{
     display: flex;
     justify-content: flex-end;
@@ -71,7 +80,7 @@
     padding-left:$padding-text ;
     border-radius:0px 10px 10px 0px;
  }   
-  .menu:hover  ,.icon  { 
+  .prix:hover  ,.icon  { 
  
   background-color:$color-tertiary;
   color: white;

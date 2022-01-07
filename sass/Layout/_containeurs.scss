@@ -103,6 +103,7 @@ h4 span{
 }
 
 #section-menu {
+  
   background-color: $color-background-box;
   margin: 0px;
   border-radius: 25px 25px 0px 0px;
@@ -126,8 +127,13 @@ h4 span{
   }
 
   #section-menu h1 {
-    font-family: $font-logo;
-    margin-left: 10px
+    margin-left:10px;
+    font-family: $font-logo; 
+  }
+  .page-name{
+    display: flex;
+    align-items: flex-start;
+    width:40%;
   }
   .conteneur-service {
     margin: $padding-20;
