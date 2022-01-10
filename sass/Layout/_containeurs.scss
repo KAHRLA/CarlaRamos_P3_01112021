@@ -79,67 +79,69 @@
   }
  /* pages restaurants*/
 /* Partie mobile */
+.conteneur-service {
+  margin: $padding-20;
+}
+#section-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $color-background-box;
+  margin: 0px;
+  border-radius: 25px 25px 0px 0px;
+  position: relative;
+  Bottom: $padding-20;
+  font-family: $font-text;
+}
+
+#section-menu h1 {
+  margin-left:10px;
+  font-family: $font-logo; 
+}
+.page-name{
+  display: flex;
+  align-items: flex-start;
+  width:100%;
+}
+
+h4 span{
+  border-bottom: solid 3px $color-tertiary;
+  margin: 10px;
+}
 .menu {
   background-color: white;
   box-shadow: $shadow;
   border: none;
   border-radius: $padding-20;
-  margin: 15px;
-  padding: $padding-20;
-  
-}
-.menu .display-flex{
-  display: flex;
-  flex-wrap:wrap;
-  justify-content: space-between;
-}
-.menu{
-  height: 45px;
-  width: 85%;
-  overflow: hidden;
- 
-}
-h4 span{
-  border-bottom: solid 3px $color-tertiary;
+  padding: 20px;
   margin: 10px;
 }
-
-#section-menu {
-  
-  background-color: $color-background-box;
-  margin: 0px;
-  border-radius: 25px 25px 0px 0px;
-  font-family: $font-text;
-}  
-  .conteneur-service h4 {
-    font-size: 18px;
-    border-bottom: solid 3px $color-tertiary;
-    width: 60px;
-  }
-  #section-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: $color-background-box;
-    margin: 0px;
-    border-radius: 25px 25px 0px 0px;
+.menu{
+  display: flex;
+  flex-wrap:wrap;
+  Justify-content: space-between;
+  height: 50px;
+  width:85% ;
+  overflow: hidden;
+  text-overflow: ellipsis;
+ 
+}
+.display-flex P{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+.prix{
+  display: flex;
+    justify-content: flex-end;
     position: relative;
-    Bottom: $padding-20;
-    font-family: $font-text;
-  }
+    top:10;
+   
+}
 
-  #section-menu h1 {
-    margin-left:10px;
-    font-family: $font-logo; 
-  }
-  .page-name{
-    display: flex;
-    align-items: flex-start;
-    width:40%;
-  }
-  .conteneur-service {
-    margin: $padding-20;
-  }
+ 
   @media (min-width: $tablette) {
    
     #section-menu {
@@ -152,16 +154,10 @@ h4 span{
    flex-wrap:wrap;
     justify-content:space-between;
   }
-
-  .conteneur-service h4 {
-    margin: 30px 0 10px 0;
-    border-bottom: solid 3px $color-tertiary;
-   }
   .menu {
-    width: 290px;
+    width: 250px;
     height: 50px;
     overflow: hidden;
-   
 }
 }
 @media (min-width: 1024px) {
@@ -170,7 +166,7 @@ h4 span{
     max-width: 1400px;
   }
   .menu {
-    width: 250px;
+    width:250px;
     height: 50px; 
     overflow: hidden;
 }
@@ -178,7 +174,7 @@ h4 span{
 @media (min-width: $desktop)
 {
 .menu{
-width: 390px;
+width: 350px;
 overflow: hidden;
   }
 }
