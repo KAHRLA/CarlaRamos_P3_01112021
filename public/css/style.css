@@ -65,12 +65,12 @@ header p {
 }
 
 .plat {
-  font-weight: bold;
-  margin: 5px;
+  font-weight: 700;
+  margin: 0px;
 }
 
 .compliment {
-  margin: 5px;
+  margin: 0px;
   font-size: 14px;
 }
 
@@ -317,7 +317,7 @@ header p {
 /* pages restaurants*/
 /* Partie mobile */
 .conteneur-service {
-  margin: 20px;
+  margin: 5px;
 }
 
 #section-menu {
@@ -353,7 +353,7 @@ h4 span {
   box-shadow: #b3b3b3 0 5px 10px;
   border: none;
   border-radius: 20px;
-  padding: 20px;
+  padding: 15px 30px;
   margin: 10px;
 }
 
@@ -362,7 +362,7 @@ h4 span {
   flex-wrap: wrap;
   Justify-content: space-between;
   height: 50px;
-  width: 85%;
+  width: 80%;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -371,15 +371,14 @@ h4 span {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  text-overflow: ellipsis;
   width: 100%;
+  text-overflow: ellipsis;
 }
 
 .prix {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   position: relative;
-  top: 10;
 }
 
 @media (min-width: 768px) {
@@ -393,10 +392,11 @@ h4 span {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0;
   }
 
   .menu {
-    width: 250px;
+    width: 310px;
     height: 50px;
     overflow: hidden;
   }
@@ -408,14 +408,14 @@ h4 span {
   }
 
   .menu {
-    width: 250px;
+    width: 256px;
     height: 50px;
     overflow: hidden;
   }
 }
 @media (min-width: 1401px) {
   .menu {
-    width: 350px;
+    width: 380px;
     overflow: hidden;
   }
 }
@@ -435,25 +435,26 @@ h4 span {
   margin: 5px;
 }
 
-.white-heart i {
+.white-heart {
   display: flex;
   justify-content: flex-end;
   position: absolute;
   top: 15px;
   z-index: 1;
   color: black;
+  opacity: 1;
   transform: scale(1.5);
 }
-.white-heart i :hover {
+.white-heart :hover {
   opacity: 0;
-  color: #FF79DA;
 }
 
 .black-heart i {
   display: flex;
   justify-content: flex-end;
   position: absolute;
-  top: 15px;
+  right: 0px;
+  margin-top: 15px;
   z-index: 1;
   opacity: 2;
   color: transparent;
@@ -464,12 +465,11 @@ h4 span {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 2;
-  transform: scale(1.2);
+  transform: scale(1.5);
   transition: all 400ms ease-in-out;
 }
 .white-heart:hover + .black-heart i :hover {
   opacity: 0;
-  transform: scale(1.5);
 }
 
 .corazon {
@@ -480,11 +480,10 @@ h4 span {
   margin-top: 20px;
 }
 
-.icon i {
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  z-index: 1;
+.icon {
+  color: transparent;
+}
+.icon:hover {
   color: white;
 }
 
@@ -492,15 +491,16 @@ h4 span {
   display: flex;
   justify-content: flex-end;
   position: relative;
-  bottom: 20px;
-  padding: 16px 5px;
-  font-size: 16px;
-  font-weight: bold;
+  left: 30px;
+  width: 22px;
+  height: 50px;
+  font-weight: 600;
 }
 
 .display-flex:hover + .price {
   border-radius: 0px 10px 10px 0px;
   background-color: #99E2D0;
+  text-overflow: ellipsis;
   opacity: 1;
 }
 .display-flex:hover + .price :hover {
