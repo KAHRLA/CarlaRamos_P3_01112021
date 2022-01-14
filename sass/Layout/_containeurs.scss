@@ -87,10 +87,10 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: $color-background-box;
-  margin: 0px;
+  margin: 0;
   border-radius: 25px 25px 0px 0px;
   position: relative;
-  Bottom: $padding-20;
+  Bottom: 15px;
   font-family: $font-text;
 }
 
@@ -113,17 +113,17 @@ h4 span{
   box-shadow: $shadow;
   border: none;
   border-radius: $padding-20;
-  padding:15px 30px;
+  padding:10px 20px;
   margin: 10px;
+ width:85%;
 }
 .menu{
   display: flex;
   flex-wrap:wrap;
   Justify-content: space-between;
   height: 50px;
-  width:80% ;
   overflow: hidden;
-  text-overflow: ellipsis;
+  
  
 }
 .display-flex P{
@@ -132,12 +132,12 @@ h4 span{
   justify-content: flex-start;
   width: 100%;
   text-overflow: ellipsis;
- 
 }
-.prix{
+.prix {
   display: flex;
-    justify-content: flex-start;
-    position: relative;
+ justify-content:flex-start ;
+ margin-right: 40px;
+ margin-top: 30px;
 }
 
  
@@ -156,7 +156,7 @@ h4 span{
    
   }
   .menu {
-    width: 310px;
+    width: 330px;
     height: 50px;
     overflow: hidden;
 }
@@ -167,7 +167,7 @@ h4 span{
    max-width: 1400px; 
   }
   .menu {
-    width: 256px;
+    width: 275px;
     height: 50px; 
     overflow: hidden;
 
@@ -177,7 +177,7 @@ h4 span{
 @media (min-width: $desktop)
 {
 .menu{
-width: 380px;
+width: 400px;
 overflow: hidden;
   }
 }

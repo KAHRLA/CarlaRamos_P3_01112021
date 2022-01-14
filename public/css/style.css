@@ -325,10 +325,10 @@ header p {
   flex-direction: column;
   justify-content: space-between;
   background-color: #F2F2F2;
-  margin: 0px;
+  margin: 0;
   border-radius: 25px 25px 0px 0px;
   position: relative;
-  Bottom: 20px;
+  Bottom: 15px;
   font-family: "Roboto", "sans-serif";
 }
 
@@ -353,8 +353,9 @@ h4 span {
   box-shadow: #b3b3b3 0 5px 10px;
   border: none;
   border-radius: 20px;
-  padding: 15px 30px;
+  padding: 10px 20px;
   margin: 10px;
+  width: 85%;
 }
 
 .menu {
@@ -362,9 +363,7 @@ h4 span {
   flex-wrap: wrap;
   Justify-content: space-between;
   height: 50px;
-  width: 80%;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .display-flex P {
@@ -378,7 +377,8 @@ h4 span {
 .prix {
   display: flex;
   justify-content: flex-start;
-  position: relative;
+  margin-right: 40px;
+  margin-top: 30px;
 }
 
 @media (min-width: 768px) {
@@ -396,7 +396,7 @@ h4 span {
   }
 
   .menu {
-    width: 310px;
+    width: 330px;
     height: 50px;
     overflow: hidden;
   }
@@ -408,14 +408,14 @@ h4 span {
   }
 
   .menu {
-    width: 256px;
+    width: 275px;
     height: 50px;
     overflow: hidden;
   }
 }
 @media (min-width: 1401px) {
   .menu {
-    width: 380px;
+    width: 400px;
     overflow: hidden;
   }
 }
@@ -480,21 +480,28 @@ h4 span {
   margin-top: 20px;
 }
 
-.icon {
-  color: transparent;
-}
-.icon:hover {
-  color: white;
-}
-
 .price {
   display: flex;
   justify-content: flex-end;
+  padding: 16px;
   position: relative;
-  left: 30px;
-  width: 22px;
-  height: 50px;
+  bottom: 30px;
+  width: 20px;
   font-weight: 600;
+}
+
+.price {
+  position: relative;
+  left: 20px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  padding-top: 20px;
+  color: white;
 }
 
 .display-flex:hover + .price {
