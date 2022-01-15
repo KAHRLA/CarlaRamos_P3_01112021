@@ -62,15 +62,16 @@
    .price {
     display: flex;
     justify-content: flex-end;
-    padding: 16px;
+   padding: 16px;
     position: relative;
   bottom:30px;
-  width:20px;
+  width:3%;
     font-weight: 600;
    }
 .price{
   position: relative;
   left: 20px;
+  
 }
 .icon{
   display: flex;

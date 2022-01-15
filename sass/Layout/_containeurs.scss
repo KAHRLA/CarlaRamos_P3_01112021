@@ -115,12 +115,12 @@ h4 span{
   border-radius: $padding-20;
   padding:10px 20px;
   margin: 10px;
- width:85%;
 }
 .menu{
   display: flex;
   flex-wrap:wrap;
   Justify-content: space-between;
+  width:85%;
   height: 50px;
   overflow: hidden;
   
@@ -131,12 +131,12 @@ h4 span{
   flex-direction: column;
   justify-content: flex-start;
   width: 100%;
-  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .prix {
   display: flex;
  justify-content:flex-start ;
- margin-right: 40px;
+ margin-right: 10px;
  margin-top: 30px;
 }
 
