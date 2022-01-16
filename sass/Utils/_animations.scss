@@ -1,46 +1,26 @@
-
-.informations-restaurant{
-    padding :$padding-text ;
-    display:flex;
-    flex-direction:row;
-  }
-  .informations-left{
-    width: 100%;
-  }
-  .lieu{
-   color: black;
-   margin-left: 15px;
-   margin: 5px;
-  }
-  
-  
-  .white-heart  {
-    display: flex;
-    justify-content: flex-end;
-    position: absolute;
-    top: 15px;
-    z-index: 1;
-    color:black;
-    opacity: 1;
-    transform:  scale(1.5);
-    & :hover {
-      opacity: 0;
-
+@keyframes home-opening {
+  0% {
+    transform: translateX(-9999px);
+}
+100% {
+    transform: translateX(0);
     }
-    }
-    .black-heart i{
-     display: flex;
-     justify-content: flex-end;
-      position: absolute;
-      right: 0px;
-      margin-top: 15px;
-      z-index: 1;
-      opacity: 2;
-      color: transparent;
-     
-      }
-      .white-heart:hover + .black-heart i{
-    background: linear-gradient(to top, $color-secondary,$color-primary, );
+}
+#page-d-accueil{
+  animation: home-opening  1s 4s both;
+
+}
+@keyframes icon-rotation {
+  0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+}
+
+    .white-heart:hover + .black-heart i{
+    background: linear-gradient( $color-secondary,$color-primary, );
     background-clip: text;
     -webkit-background-clip: text;
     opacity:2;
@@ -51,44 +31,19 @@
 
     }
   }
-  .corazon {
-    display: flex;
-    justify-content: flex-end;
-    position: absolute;
-    right: 35px;
-    margin-top: 20px;
-    }
-
-   .price {
-    display: flex;
-    justify-content: flex-end;
-   padding: 16px;
-    position: relative;
-  bottom:30px;
-  width:3%;
-    font-weight: 600;
-   }
-.price{
-  position: relative;
-  left: 20px;
-  
-}
-.icon{
-  display: flex;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
-  padding-top: 20px;
- color: white;
-
-}
+ 
   .display-flex:hover + .price {
     border-radius:0px 10px 10px 0px;
     background-color:$color-tertiary;
-    text-overflow: ellipsis;
+    transition:  300ms ease;
+    margin-right: 30px;
      opacity: 1;
-  & :hover { 
- opacity: 1;
+  & :hover {
+ opacity: 0;
+ 
   }
+  .icon {
+    animation:  icon-rotation   1s   ;
+    }
    }
    

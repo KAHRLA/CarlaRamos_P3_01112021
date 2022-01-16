@@ -39,7 +39,7 @@ a {
   width: 50%;
 }
 
-#selections {
+#page-d-accueil {
   font-family: "Roboto", "sans-serif";
   margin: 0px;
   padding: 0px;
@@ -273,7 +273,56 @@ header p {
 }
 
 .informations-restaurant {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.informations-restaurant {
   margin-bottom: 15px;
+}
+
+.informations-left {
+  width: 100%;
+}
+
+.lieu {
+  color: black;
+  margin-left: 15px;
+  margin: 5px;
+}
+
+.corazon {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 35px;
+  margin-top: 20px;
+}
+
+.white-heart {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 15px;
+  z-index: 1;
+  color: black;
+  opacity: 1;
+  transform: scale(1.5);
+}
+.white-heart :hover {
+  opacity: 0;
+}
+
+.black-heart i {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0px;
+  margin-top: 15px;
+  z-index: 1;
+  opacity: 2;
+  color: transparent;
 }
 
 .info {
@@ -359,109 +408,113 @@ h4 span {
 
 .menu {
   display: flex;
-  flex-wrap: wrap;
-  Justify-content: space-between;
+  justify-content: space-between;
   width: 85%;
   height: 50px;
   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
-.display-flex P {
+.display-flex {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 100%;
   overflow: hidden;
+  white-space: wrap;
+  text-overflow: ellipsis;
+}
+
+.price {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  position: absolute;
+  top: -10px;
+  width: 10%;
+  height: 80px;
+  font-weight: 600;
+}
+
+.price {
+  position: relative;
+  left: 50px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  margin-top: -45px;
+  color: white;
 }
 
 .prix {
   display: flex;
   justify-content: flex-start;
-  margin-right: 10px;
-  margin-top: 30px;
+  margin-right: 50px;
+  margin-bottom: 65px;
 }
 
 @media (min-width: 768px) {
   #section-menu {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
+    margin: 0;
   }
 
   .conteneur-service {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     margin: 0;
   }
 
   .menu {
-    width: 330px;
+    width: 100%;
     height: 50px;
-    overflow: hidden;
   }
 }
 @media (min-width: 1024px) {
   #conteneur-restaurants {
     margin: 0 auto;
-    max-width: 1400px;
   }
 
   .menu {
-    width: 275px;
+    width: 100%;
     height: 50px;
-    overflow: hidden;
   }
 }
 @media (min-width: 1401px) {
   .menu {
-    width: 400px;
-    overflow: hidden;
+    width: 100%;
+    height: 50px;
   }
 }
-.informations-restaurant {
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
+@keyframes home-opening {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+#page-d-accueil {
+  animation: home-opening 1s 4s both;
 }
 
-.informations-left {
-  width: 100%;
+@keyframes icon-rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-
-.lieu {
-  color: black;
-  margin-left: 15px;
-  margin: 5px;
-}
-
-.white-heart {
-  display: flex;
-  justify-content: flex-end;
-  position: absolute;
-  top: 15px;
-  z-index: 1;
-  color: black;
-  opacity: 1;
-  transform: scale(1.5);
-}
-.white-heart :hover {
-  opacity: 0;
-}
-
-.black-heart i {
-  display: flex;
-  justify-content: flex-end;
-  position: absolute;
-  right: 0px;
-  margin-top: 15px;
-  z-index: 1;
-  opacity: 2;
-  color: transparent;
-}
-
 .white-heart:hover + .black-heart i {
-  background: linear-gradient(to top, #FF79DA, #9356DC);
+  background: linear-gradient(#FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 2;
@@ -472,46 +525,18 @@ h4 span {
   opacity: 0;
 }
 
-.corazon {
-  display: flex;
-  justify-content: flex-end;
-  position: absolute;
-  right: 35px;
-  margin-top: 20px;
-}
-
-.price {
-  display: flex;
-  justify-content: flex-end;
-  padding: 16px;
-  position: relative;
-  bottom: 30px;
-  width: 3%;
-  font-weight: 600;
-}
-
-.price {
-  position: relative;
-  left: 20px;
-}
-
-.icon {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
-  padding-top: 20px;
-  color: white;
-}
-
 .display-flex:hover + .price {
   border-radius: 0px 10px 10px 0px;
   background-color: #99E2D0;
-  text-overflow: ellipsis;
+  transition: 300ms ease;
+  margin-right: 30px;
   opacity: 1;
 }
 .display-flex:hover + .price :hover {
-  opacity: 1;
+  opacity: 0;
+}
+.display-flex:hover + .price .icon {
+  animation: icon-rotation 1s;
 }
 
 footer {

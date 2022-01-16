@@ -38,7 +38,52 @@
   transform: translate(-50%, -50%);
 }
 .informations-restaurant{
+  padding :$padding-text ;
+  display:flex;
+  flex-direction:row;
+}
+.informations-restaurant{
   margin-bottom: 15px;
+  }
+.informations-left{
+  width: 100%;
+}
+.lieu{
+ color: black;
+ margin-left: 15px;
+ margin: 5px;
+}
+.corazon {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 35px;
+  margin-top: 20px;
+  }
+
+.white-heart  {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 15px;
+  z-index: 1;
+  color:black;
+  opacity: 1;
+  transform:  scale(1.5);
+  & :hover {
+    opacity: 0;
+
+  }
+  }
+  .black-heart i{
+   display: flex;
+   justify-content: flex-end;
+    position: absolute;
+    right: 0px;
+    margin-top: 15px;
+    z-index: 1;
+    opacity: 2;
+    color: transparent;
 }
 .info {
   position: absolute;
@@ -108,6 +153,7 @@ h4 span{
   border-bottom: solid 3px $color-tertiary;
   margin: 10px;
 }
+
 .menu {
   background-color: white;
   box-shadow: $shadow;
@@ -118,66 +164,94 @@ h4 span{
 }
 .menu{
   display: flex;
-  flex-wrap:wrap;
-  Justify-content: space-between;
+ 
+justify-content:space-between;
   width:85%;
   height: 50px;
   overflow: hidden;
-  
+  white-space: nowrap;
+text-overflow: ellipsis;
+ 
  
 }
-.display-flex P{
+.display-flex   {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 100%;
   overflow: hidden;
+  white-space: wrap;
+text-overflow: ellipsis;
+}
+.price {
+  display: flex;
+  justify-content: flex-end;
+align-items: center;
+padding: 20px;
+ position: absolute;
+ top: -10px;
+  width: 10%;
+  height: 80px;
+
+font-weight: 600;
+ }
+.price{
+position: relative;
+left: 50px;
+}
+.icon{
+display: flex;
+align-items: center;
+position: absolute;
+margin-top: -45px;
+color: white;
 }
 .prix {
-  display: flex;
+ display: flex;
  justify-content:flex-start ;
- margin-right: 10px;
- margin-top: 30px;
-}
+ margin-right: 50px;
+margin-bottom: 65px;
+
+ }
+
 
  
   @media (min-width: $tablette) {
    
     #section-menu {
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       justify-content: space-between;
+      margin: 0;
     }
   .conteneur-service {
     display: flex;
-   flex-wrap:wrap;
+   flex-wrap:nowrap;
     justify-content:space-between;
     margin: 0;
    
   }
   .menu {
-    width: 330px;
+    width:100%;
     height: 50px;
-    overflow: hidden;
 }
+
 }
 @media (min-width: 1024px ) { 
   #conteneur-restaurants {
     margin: 0 auto;
-   max-width: 1400px; 
+   
   }
   .menu {
-    width: 275px;
-    height: 50px; 
-    overflow: hidden;
-
-    
+    width:100%;
+    height: 50px;    
 }
+
 }
 @media (min-width: $desktop)
 {
 .menu{
-width: 400px;
-overflow: hidden;
-  }
+width:100%;
+height: 50px;    
+}
+
 }
