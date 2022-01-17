@@ -7,10 +7,23 @@
     }
 }
 #page-d-accueil{
+  margin: 0;
   animation: home-opening  1s 4s both;
 }
-
-    .white-heart:hover + .black-heart i{
+.chargement-site {
+  width: 100%;
+ height: 100px;
+ animation: loard 4ms;
+ }
+ @keyframes loard {
+from {
+    transform: scaleX(0);
+  }
+  to{
+   transform: scaleX(2);
+  }
+ }
+ .white-heart:hover + .black-heart i{
     background: linear-gradient( $color-secondary,$color-primary, );
     background-clip: text;
     -webkit-background-clip: text;
@@ -23,7 +36,7 @@
     }
   }
  
-  .display-flex:hover + .price {
+  .display-flex:hover +  .price {
     border-radius:0px 10px 10px 0px;
     background-color:$color-tertiary;
     transition:  300ms ease;
@@ -45,21 +58,7 @@
       transform: rotate(360deg);
   }
   }
-   .chargement-site {
-    background: red;
-    
-    width: 100%;
-   height: 100px;
-   animation: loard 4ms;
-   }
-   @keyframes loard {
-  from {
-      transform: scaleX(0);
-    }
-    to{
-     transform: scaleX(2);
-    }
-   }
+   
    .conteneur-service .menu{
      animation: pogressive 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
    }

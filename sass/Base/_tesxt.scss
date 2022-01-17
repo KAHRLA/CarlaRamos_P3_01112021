@@ -1,6 +1,6 @@
 a{
     text-decoration: none;
-    width: 50%;
+   
 }
 #page-d-accueil{
     font-family: $font-text;
@@ -8,7 +8,7 @@ a{
     padding: 0px;
 }
    
-//recherche input
+/*---recherche input---*/
 #Belleville{
     color: black;
     font-weight: 600;
@@ -21,7 +21,11 @@ header p{
     font-weight: bold;
     font-family : $font-logo;
 } 
-
+#section-menu a{
+    font-family: $font-text;
+    color: black;
+  }
+  
 #section-menu h1 {
 font-family: $font-logo;
 margin-left: 20px;

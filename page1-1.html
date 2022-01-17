@@ -10,7 +10,7 @@
         <link rel="stylesheet" type="text/css" href="./public/css/style.css">
         <title>La palette du gout</title>
     </head>
-<body>
+<body id="page-restaurants">
     <header>
         <a href="./index.html"><i class="fas fa-arrow-left"></i></a>
         <p> Ohmyfood</p>
@@ -28,7 +28,8 @@
 </div>
         <h4><span>ENTRÉES</span></h4>   
 <div class="conteneur-service" id="entrees">  
-    <div class="menu"> 
+  <a href="#"> 
+    <div class="menu">
         <div class="display-flex">   
             <p class="plat">Fricassées d'escargot</p>
             <p class="compliment">Au pimmet d'espelette</p>
@@ -38,6 +39,9 @@
             <span class="icon"><i class="fas fa-check-circle"></i></span>
     </div>
     </div>
+  </a>
+
+  <a href="#"> 
     <div class="menu">
         <div class="display-flex">  
             <p class="plat">Foie gras de canard mi-cuit</p>
@@ -48,6 +52,8 @@
             <span class="icon"><i class="fas fa-check-circle"></i></span>
       </div>
     </div>
+    </a>
+    <a href="#"> 
     <div class="menu"> 
         <div class="display-flex">
         <p class="plat">Oeuf au plat</p>
@@ -59,9 +65,11 @@
     </div>
     </div>
    </div>
+   </a>
     <h4><span>PLAT</span></h4>
     <div class="conteneur-service" id="plat-principal">
-    <div class="menu">
+      <a href="#"> 
+        <div class="menu">
         <div class="display-flex">
         <p class="plat">Filet de boeuf aux herbes</p>
         <p class="compliment">Accompagné de sa ribambelle de légu...</p>
@@ -70,8 +78,11 @@
         <p class="prix">40€</p>
         <span class="icon"><i class="fas fa-check-circle"></i></span>
       </div>
-    </div>
-    <div class="menu">
+        </div>
+      </a>
+     
+      <a href="#"> 
+        <div class="menu">
       <div class="display-flex">   
         <p  class="plat">Parmentier de queu de boeuf</p>
         <p class="compliment">À la truffe noire sur s purée de panais</p>
@@ -80,9 +91,11 @@
         <p class="prix">35€ </p>
         <span class="icon"><i class="fas fa-check-circle"></i></span>
       </div>
-    </div> 
-    
-    <div class="menu">
+        </div>
+      </a>
+  
+      <a href="#"> 
+        <div class="menu">   
         <div class="display-flex">
         <p class="plat">Filet de Turbot</p>
         <p class="compliment">Aux argrumes</p>
@@ -93,45 +106,52 @@
       </div> 
     </div>
    </div>
-</div>
+  </a>
+
     <h4><span> DESSERTS </span></h4>
-    <div class="conteneur-service" id="desserts">
-    <div class="menu"> 
+    <div class="conteneur-service" id="desserts"> 
+      <a href="#">
+        <div class="menu">  
         <div class="display-flex">   
         <p class="plat">Paris-Brest</p>
         <p class="compliment"> Revisité</p>
-        </div>
+      </div>
         <div class="price">
     <p class="prix">18€</p>
         <span class="icon"><i class="fas fa-check-circle"></i></span>
         </div>
-    </div> 
-   
+      </div>
+    </a> 
+
+    <a href="#">
     <div class="menu">
-        <div class="display-flex"> 
+       <div class="display-flex"> 
         <p class="plat">Macarons au chocolat d'exception</p>
         <p class="compliment">Et glace à la vanille de Madagascar</p>
-        </div>
+      </div>
         <div class="price">
     <p class="prix">22€</p>
         <span class="icon"><i class="fas fa-check-circle"></i></span>
         </div>
        </div>
-   
-    <div class="menu">
+   </a>
+
+      <a href="#"> 
+        <div class="menu">  
         <div class="display-flex">
         <p class="plat"> Mousse au chocolat</p>
         <p class="compliment">Au piment d'espelete et à la truffe noire</p>
-        </div>
+      </div>
         <div class="price">
     <p class="prix">25€</p>
         <span class="icon"><i class="fas fa-check-circle"></i></span>
-         </div>  
-       </div> 
+         </div> 
+        </div>
+      </a>
      </div>
-
+   
 <button type="button" class="btn_intro"  id="btn_commande">
-    Commander
+  <a href="#">  Commander </a>
   </button>  
 </section>
 <footer class="footer">

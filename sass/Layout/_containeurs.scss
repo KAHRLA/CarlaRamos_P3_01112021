@@ -124,6 +124,9 @@
   }
  /* pages restaurants*/
 /* Partie mobile */
+#page-restaurants{
+  margin: 0;
+}
 .conteneur-service {
   margin: 5px;
 }
@@ -136,7 +139,6 @@
   border-radius: 25px 25px 0px 0px;
   position: relative;
   Bottom: 15px;
-  font-family: $font-text;
 }
 
 #section-menu h1 {
@@ -154,7 +156,7 @@ h4 span{
   margin: 10px;
 }
 
-.menu {
+.menu  {
   background-color: white;
   box-shadow: $shadow;
   border: none;
@@ -162,18 +164,20 @@ h4 span{
   padding:10px 20px;
   margin: 10px;
 }
-.menu{
-  display: flex;
- 
+.menu {
+  display: flex; 
 justify-content:space-between;
-  width:85%;
-  height: 50px;
+  
   overflow: hidden;
   white-space: nowrap;
 text-overflow: ellipsis;
- 
- 
 }
+.menu {
+  
+  width:85%;
+  height: 50px;
+}
+
 .display-flex   {
   display: flex;
   flex-direction: column;
@@ -231,7 +235,7 @@ margin-bottom: 65px;
    
   }
   .menu {
-    width:100%;
+    width:250px;
     height: 50px;
 }
 
@@ -242,15 +246,15 @@ margin-bottom: 65px;
    
   }
   .menu {
-    width:100%;
+    width:280px;
     height: 50px;    
 }
 
 }
 @media (min-width: $desktop)
 {
-.menu{
-width:100%;
+.menu {
+width:400px;
 height: 50px;    
 }
 }
