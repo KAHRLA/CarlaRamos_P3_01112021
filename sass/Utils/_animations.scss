@@ -10,12 +10,25 @@
   margin: 0;
   animation: home-opening  1s 4s both;
 }
-.chargement-site {
+.chargerment-site {
   width: 100%;
- height: 100px;
- animation: loard 4ms;
- }
- @keyframes loard {
+  height: 100%;
+display: flex;
+background-color:$color-primary ;
+
+#bar-1{
+  background-color:$color-primary ;
+  animation-delay: 1000ms;
+}
+#bar-2{
+  background-color: $color-tertiary;
+  animation-delay: 2000ms;
+}
+#bar-3{
+  background-color:$color-secondary ;
+  animation-delay: 3000ms;
+}
+ @keyframes load {
 from {
     transform: scaleX(0);
   }
@@ -23,33 +36,28 @@ from {
    transform: scaleX(2);
   }
  }
- .white-heart:hover + .black-heart i{
+}  .corazon .white-heart:hover + .black-heart i{
     background: linear-gradient( $color-secondary,$color-primary, );
     background-clip: text;
     -webkit-background-clip: text;
     opacity:2;
     transform: scale(1.5);
-    transition:all 400ms ease-in-out ;
+    transition:all 300ms ease-in-out ;
     & :hover {
       opacity: 0;
-
     }
   }
- 
-  .display-flex:hover +  .price {
+
+   .display-flex:hover + .price {
     border-radius:0px 10px 10px 0px;
     background-color:$color-tertiary;
     transition:  300ms ease;
     margin-right: 30px;
-     opacity: 1;
-  & :hover {
- opacity: 0;
- 
-  }
-  .icon {
+    .icon {
     animation:  icon-rotation   1s   ;
     }
    }
+
    @keyframes icon-rotation {
     0% {
       transform: rotate(0deg);
@@ -60,16 +68,16 @@ from {
   }
    
    .conteneur-service .menu{
-     animation: pogressive 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+     animation: pogressive 3s  ;
    }
    #entrees{
-    animation: pogressive 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+    animation-delay: pogressive 0,1s  ;
    }
    #plat-principal{
-    animation: pogressive 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+    animation-delay: pogressive 0,2s, ;
    }
    #desserts{
-    animation: pogressive 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+    animation-delay: pogressive 0,3s ;
    }
    @keyframes pogressive {
 0% {

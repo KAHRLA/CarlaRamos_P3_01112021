@@ -247,7 +247,7 @@ header p {
 }
 
 #conteneur-restaurants {
-  margin: 0px;
+  margin: 0;
 }
 
 .resto {
@@ -312,10 +312,9 @@ header p {
   justify-content: flex-end;
   position: absolute;
   top: 15px;
-  z-index: 1;
   color: black;
   opacity: 1;
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 .white-heart :hover {
   opacity: 0;
@@ -328,7 +327,7 @@ header p {
   right: 0px;
   margin-top: 15px;
   z-index: 1;
-  opacity: 2;
+  opacity: 1;
   color: transparent;
 }
 
@@ -374,21 +373,20 @@ header p {
 /* Partie mobile */
 #page-restaurants {
   margin: 0;
-}
-
-.conteneur-service {
-  margin: 5px;
+  padding: 0;
 }
 
 #section-menu {
-  display: flex;
+  position: relative;
+  z-index: 2;
   flex-direction: column;
   justify-content: space-between;
   background-color: #F2F2F2;
-  margin: 0;
   border-radius: 25px 25px 0px 0px;
-  position: relative;
-  Bottom: 15px;
+}
+
+#section-menu {
+  margin-top: -30px;
 }
 
 #section-menu h1 {
@@ -412,19 +410,17 @@ h4 span {
   box-shadow: #b3b3b3 0 5px 10px;
   border: none;
   border-radius: 20px;
-  padding: 10px 20px;
+  padding: 10px;
   margin: 10px;
 }
 
 .menu {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
-  overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-}
-
-.menu {
+  overflow: hidden;
   width: 85%;
   height: 50px;
 }
@@ -436,17 +432,17 @@ h4 span {
   overflow: hidden;
   white-space: wrap;
   text-overflow: ellipsis;
+  width: 100%;
 }
 
 .price {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
   padding: 20px;
   position: absolute;
   top: -10px;
   width: 6%;
-  height: 80px;
+  height: 30px;
   font-weight: 600;
 }
 
@@ -459,7 +455,7 @@ h4 span {
   display: flex;
   align-items: center;
   position: absolute;
-  margin-top: -45px;
+  margin-top: 10px;
   color: white;
 }
 
@@ -467,15 +463,46 @@ h4 span {
   display: flex;
   justify-content: flex-start;
   margin-right: 50px;
-  margin-bottom: 65px;
+  margin-top: 5px;
 }
 
 @media (min-width: 768px) {
+  #conteneur-restaurants {
+    margin: 0 auto;
+  }
+
   #section-menu {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: -30px;
+  }
+
+  .conteneur-service {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 0;
+  }
+
+  .menu a {
+    width: 80%;
+    height: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  #conteneur-restaurants {
+    margin: 0 auto;
+  }
+
+  .menu {
+    width: 90%;
+    height: 50px;
+  }
+}
+@media (min-width: 1401px) {
+  #conteneur-restaurants {
+    margin: 0 auto;
   }
 
   .conteneur-service {
@@ -486,23 +513,7 @@ h4 span {
   }
 
   .menu {
-    width: 250px;
-    height: 50px;
-  }
-}
-@media (min-width: 1024px) {
-  #conteneur-restaurants {
-    margin: 0 auto;
-  }
-
-  .menu {
-    width: 280px;
-    height: 50px;
-  }
-}
-@media (min-width: 1401px) {
-  .menu {
-    width: 400px;
+    width: 80%;
     height: 50px;
   }
 }
@@ -519,13 +530,25 @@ h4 span {
   animation: home-opening 1s 4s both;
 }
 
-.chargement-site {
+.chargerment-site {
   width: 100%;
-  height: 100px;
-  animation: loard 4ms;
+  height: 100%;
+  display: flex;
+  background-color: #9356DC;
 }
-
-@keyframes loard {
+.chargerment-site #bar-1 {
+  background-color: #9356DC;
+  animation-delay: 1000ms;
+}
+.chargerment-site #bar-2 {
+  background-color: #99E2D0;
+  animation-delay: 2000ms;
+}
+.chargerment-site #bar-3 {
+  background-color: #FF79DA;
+  animation-delay: 3000ms;
+}
+@keyframes load {
   from {
     transform: scaleX(0);
   }
@@ -533,15 +556,16 @@ h4 span {
     transform: scaleX(2);
   }
 }
-.white-heart:hover + .black-heart i {
+
+.corazon .white-heart:hover + .black-heart i {
   background: linear-gradient(#FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 2;
   transform: scale(1.5);
-  transition: all 400ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
-.white-heart:hover + .black-heart i :hover {
+.corazon .white-heart:hover + .black-heart i :hover {
   opacity: 0;
 }
 
@@ -550,10 +574,6 @@ h4 span {
   background-color: #99E2D0;
   transition: 300ms ease;
   margin-right: 30px;
-  opacity: 1;
-}
-.display-flex:hover + .price :hover {
-  opacity: 0;
 }
 .display-flex:hover + .price .icon {
   animation: icon-rotation 1s;
@@ -568,19 +588,19 @@ h4 span {
   }
 }
 .conteneur-service .menu {
-  animation: pogressive 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: pogressive 3s;
 }
 
 #entrees {
-  animation: pogressive 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-delay: pogressive 0, 1s;
 }
 
 #plat-principal {
-  animation: pogressive 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-delay: pogressive 0, 2s;
 }
 
 #desserts {
-  animation: pogressive 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-delay: pogressive 0, 3s;
 }
 
 @keyframes pogressive {
