@@ -8,15 +8,14 @@
     border: none; 
     font-weight: bolder;
     padding:20px 20px;
-    width:60%;
+    width: 60%;
     margin: 50px auto;
-    
-    &:hover {
-    background: $background-color-clear;
-    box-shadow: $shadow-color-clear;
+    & :hover{
+    background:$background-color-clear;
+    box-shadow:$shadow-color-clear ;
     }
-}
-@mixin btn_commande {
-    width:$medium;
-} 
+    }
 
+    @mixin btn-commande {
+       width:$medium ; 
+    }

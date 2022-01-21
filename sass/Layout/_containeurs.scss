@@ -2,13 +2,11 @@
 /* Partie mobile COMMUMNE*/
 #section-restaurations {
   background-color: $color-background-box;
-  border-radius: top 15px;
+margin-bottom: 60px;
+
 }
 
-#conteneur-restaurants {
-  margin: 0;
- 
-}
+
 
 .resto {
   background-color: white;
@@ -62,24 +60,24 @@
   margin-top: 20px;
   }
 
- .white-heart  {
+ .white-heart i {
   display: flex;
   justify-content: flex-end;
   position: absolute;
   top: 15px;
   color:black;
   opacity: 1;
-  transform:  scale(1.3);
+  transform: scale(1.3);
   & :hover {
     opacity: 0;
-
+    color:$color-primary;
   }
   }
   .black-heart i{
    display: flex;
    justify-content: flex-end;
     position: absolute;
-    right: 0px;
+    right: -15px;
     margin-top: 15px;
     z-index: 1;
     opacity: 1;
@@ -125,15 +123,17 @@
  /* pages restaurants*/
 /* Partie mobile */
 #page-restaurants{
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
 }
 
+#conteneur-restaurants {
+  margin: 0 auto;
+  }
 #section-menu {
   position:relative;
   z-index: 2;
-  flex-direction: column;
-  justify-content: space-between;
+ flex-direction: column;
+ justify-content: space-between;
   background-color: $color-background-box;
   border-radius: 25px 25px 0px 0px;
 }
@@ -148,7 +148,8 @@
 .page-name{
   display: flex;
   align-items: flex-start;
-  width:100%;
+  white-space: nowrap;
+  width: 100%;
 }
 
 h4 span{
@@ -176,13 +177,13 @@ height: 50px;
 }
 
 
-.display-flex   {
+.menu .display-flex   {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   overflow: hidden;
-  white-space: wrap;
-  text-overflow: ellipsis;
+  white-space:nowrap;
+  text-overflow: ellipsis  ;
   width: 100%;
 }
 .price {
@@ -219,44 +220,48 @@ color: white;
       }
     #section-menu  {
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap:wrap;
       justify-content: space-between;
         margin-top: -30px;
     }
     .conteneur-service {
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap:wrap;
       justify-content: space-between;
      margin: 0;
     }
   .menu a{
-    width:80%;
+    width:300%;
     height: 50px;
    
 }
 }
 @media (min-width: 1024px ) { 
-  #conteneur-restaurants {
-    margin: 0 auto;
-  }
+  .conteneur-service {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+   margin: 0;
+   }
   .menu  {
-    width: 90%;
+    width:275px;
     height: 50px; 
+   
    
 }
 }
 @media (min-width: $desktop){ 
 #conteneur-restaurants {
-  margin: 0 auto;
+  margin: 0;
 }
 .conteneur-service {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  margin: 0;
+  flex-wrap: wrap;
+  
+ 
 }
 .menu {
-width:80%;
+width:90%;
 height: 50px;
     
 }
