@@ -1,8 +1,10 @@
 @import '../Utils/variables';
 .btn_intro  {@include btn_intro;
-    
-}
-
+} 
+.btn{
+   display: grid;
+   
+  }
 @media (min-width: $desktop){
  #btn_commande {@include btn_commande;
 }

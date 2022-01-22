@@ -1,3 +1,15 @@
+@keyframes apparition-accueil {
+  0% {
+    transform: translateX(-9999px);
+}
+100% {
+    transform: translateX(0);
+    }
+}
+.website{
+  margin: 0;
+  animation: apparition-accueil  1s 6s both;
+}
 @keyframes home-opening {
   0% {
     transform: translateX(-9999px);
@@ -8,57 +20,44 @@
 }
 #page-d-accueil{
   margin: 0;
-  animation: home-opening  1s 4s both;
+  animation: home-opening  4s 0s both;
 }
-.chargement-site {
-  opacity: 0;}
-  /*
-width: 100px
-padding: 60px 80px;
-border:solid 5px #99E2D0 ;
-display: flex;
-justify-content: center;
-position:relative;
-z-index: 1;
-font-size: 38px;
-font-weight: 700;
-font-family : $font-logo;
-background-color: white;
-color:
-opacity: o;
-animation:  loading  1s 4s both ;
+.chargement-site{
+  animation: animation-off 4s;
+  transform-origin: top;
+  animation-delay: 4s;
 }
-*/
-@keyframes loading {
-  0% {
-    transform: rotate(0deg);
-}
-100% {
-    transform: rotate(2deg);
-}
-}
+.chargement-logo{
+  animation: icon-rotation 1s 4s both;
  
- 
+}
+@keyframes animation-off {
+  to {
+    transform: scale(0);
+  }
+}
+ .white-heart:hover{
+  opacity: 0;
+}
    .white-heart:hover + .black-heart i{
     background: linear-gradient( $color-secondary,$color-primary, );
     background-clip: text;
     -webkit-background-clip: text;
     opacity:1;
-    transform: scale(1.5);
+    transform: scale(1.3);
     transition:all 300ms ease-in-out ;
     & :hover {
       opacity:1;
       
     }
   }
-
-   .display-flex:hover + .price {
+   .menu:hover .price {
     border-radius:0px 10px 10px 0px;
     background-color:$color-tertiary;
     transition:  300ms ease;
     margin-right: 30px;
-    .icon {
-    animation:  icon-rotation   1s   ;
+    .icon i{
+    animation:  icon-rotation   1s;
     }
    }
 
@@ -67,7 +66,7 @@ animation:  loading  1s 4s both ;
       transform: rotate(0deg);
   }
   100% {
-      transform: rotate(360deg);
+      transform: rotate(-360deg);
   }
   }
    

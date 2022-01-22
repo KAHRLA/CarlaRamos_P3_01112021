@@ -8,6 +8,8 @@ $shadow: #b3b3b3 0 5px 10px;
 $shadow-color-clear:#999999 0 5px 10px;
 $background-color-clear: linear-gradient(-5deg, #a16be0 20%, #ff93e1);
 $color-gray: #333333;
+$colors: (1: $color-primary, 2: $color-secondary, 3: $color-tertiary);
+
 
 // numbers
 $padding-img: 10px 10px 0 0;
