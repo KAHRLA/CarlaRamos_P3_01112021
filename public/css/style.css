@@ -9,15 +9,10 @@
   font-weight: bolder;
   padding: 20px 20px;
   width: 60%;
-  margin: 50px auto;
 }
 .btn_intro :hover {
   background: linear-gradient(-5deg, #a16be0 20%, #ff93e1);
   box-shadow: #999999 0 5px 10px;
-}
-
-.btn {
-  display: grid;
 }
 
 @media (min-width: 1401px) {
@@ -27,6 +22,7 @@
 
   .btn_intro {
     width: 30%;
+    margin: 50px auto;
   }
 }
 @media (min-width: 768px) {
@@ -36,6 +32,7 @@
 
   .btn_intro {
     width: 30%;
+    margin: 50px auto;
   }
 }
 a {
@@ -144,6 +141,9 @@ header p {
   border: none;
   background: transparent;
   color: #333333;
+}
+.recherche input:focus {
+  outline-style: none;
 }
 
 #introduction {
@@ -277,6 +277,10 @@ header p {
   width: 100%;
 }
 
+#page-d-accueil {
+  margin: 0;
+}
+
 #section-restaurations {
   background-color: #F2F2F2;
 }
@@ -330,10 +334,9 @@ header p {
   margin: 5px;
 }
 
-.corazon {
+.corazon-0 {
   font-size: 20px;
-  position: absolute;
-  right: 35px;
+  margin-top: 30px;
 }
 
 .white-heart {
@@ -428,14 +431,18 @@ header p {
 }
 
 .page-name {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin: 0 10% 0 5%;
   padding-top: 30px;
 }
 .page-name h1 {
   margin: 0;
+}
+
+.corazon {
+  position: absolute;
+  right: 35px;
+  margin-top: -25px;
+  font-size: 20px;
 }
 
 h4 span {
@@ -450,15 +457,15 @@ h4 span {
   border-radius: 20px;
   padding: 10px;
   margin: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .menu {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
   width: 85%;
   height: 50px;
 }
@@ -467,10 +474,9 @@ h4 span {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow: hidden;
   white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
-  width: 100%;
 }
 
 .price {
@@ -498,15 +504,11 @@ h4 span {
   padding: 5px 3px;
 }
 
-.btn {
-  text-align: center;
-}
-
 .prix {
   display: flex;
   justify-content: flex-start;
   margin-right: 50px;
-  margin-top: 5px;
+  margin-top: 15px;
 }
 
 @media (min-width: 768px) {
@@ -534,32 +536,37 @@ h4 span {
   }
 }
 @media (min-width: 1024px) {
+  #conteneur-restaurants {
+    margin: 0 auto;
+    max-width: 1400px;
+  }
+
   .conteneur-service {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: Wrap;
     justify-content: space-between;
     margin: 0;
   }
 
   .menu {
-    width: 275px;
+    width: 90%;
     height: 50px;
   }
 }
 @media (min-width: 1401px) {
   #conteneur-restaurants {
-    margin: 0 auto;
+    margin: 0;
   }
 
   .conteneur-service {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
-    overflow: hidden;
+    margin: 0;
   }
 
   .menu {
-    width: 290px;
+    width: 80%;
     height: 50px;
   }
 }
@@ -573,7 +580,7 @@ h4 span {
 }
 .website {
   margin: 0;
-  animation: apparition-accueil 1s 6s both;
+  animation: apparition-accueil 1s 4s both;
 }
 
 @keyframes home-opening {
@@ -584,19 +591,14 @@ h4 span {
     transform: translateX(0);
   }
 }
-#page-d-accueil {
-  margin: 0;
-  animation: home-opening 4s 0s both;
-}
-
 .chargement-site {
-  animation: animation-off 4s;
+  animation: animation-off 1s 4s;
   transform-origin: top;
   animation-delay: 4s;
 }
 
 .chargement-logo {
-  animation: icon-rotation 1s 4s both;
+  animation: icon-rotation 4s 0s both;
 }
 
 @keyframes animation-off {
@@ -640,18 +642,6 @@ h4 span {
 }
 .conteneur-service .menu {
   animation: pogressive 3s;
-}
-
-#entrees {
-  animation-delay: 3s;
-}
-
-#plat-principal {
-  animation-delay: 2s;
-}
-
-#desserts {
-  animation-delay: 1s;
 }
 
 @keyframes pogressive {

@@ -8,7 +8,7 @@
 }
 .website{
   margin: 0;
-  animation: apparition-accueil  1s 6s both;
+  animation: apparition-accueil  1s 4s both;
 }
 @keyframes home-opening {
   0% {
@@ -18,17 +18,13 @@
     transform: translateX(0);
     }
 }
-#page-d-accueil{
-  margin: 0;
-  animation: home-opening  4s 0s both;
-}
 .chargement-site{
-  animation: animation-off 4s;
+  animation: animation-off 1s 4s;
   transform-origin: top;
   animation-delay: 4s;
 }
 .chargement-logo{
-  animation: icon-rotation 1s 4s both;
+  animation: icon-rotation 4s 0s both;
  
 }
 @keyframes animation-off {
@@ -69,19 +65,11 @@
       transform: rotate(-360deg);
   }
   }
-   
    .conteneur-service .menu{
-     animation: pogressive 3s  ;
+    animation: pogressive 3s;
+
    }
-   #entrees{
-    animation-delay: 3s  ;
-   }
-   #plat-principal{
-    animation-delay:  2s ;
-   }
-   #desserts{
-    animation-delay:  1s ;
-   }
+   
    @keyframes pogressive {
 0% {
   transform: translateY(50%);

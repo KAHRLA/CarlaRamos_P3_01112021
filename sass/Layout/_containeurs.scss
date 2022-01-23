@@ -30,10 +30,12 @@ justify-content: center;
   animation: start 1s 4s both;
   width: 100%;
 }
+#page-d-accueil{
+  margin: 0;
+}
 #section-restaurations {
   background-color: $color-background-box;
 }
-
 .resto {
   background-color: white;
   border-radius: 15px;
@@ -42,18 +44,15 @@ justify-content: center;
   overflow: hidden;
   position:relative
 }
-
 .resto img {
   width: 100%;
 }
-
 .resto-img {
   transform: translate(-0%, -0%);
   height: 215px;
   overflow: hidden;
   border-radius: $padding-img;
 }
-
 .resto-img img {
   width: 100%;
   min-width: 220px;
@@ -78,10 +77,9 @@ justify-content: center;
  margin-left: 15px;
  margin: 5px;
 }
-.corazon {
+.corazon-0 {
   font-size: 20px;
-  position: absolute;
-  right: 35px;
+  margin-top: 30px;
   }
 
 .white-heart{
@@ -169,17 +167,18 @@ justify-content: center;
   font-family: $font-logo; 
 }
 .page-name{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 10% 0 5%;
+   margin: 0 10% 0 5%;
   padding-top: 30px;
-
   h1{
     margin : 0;
   }
 }
-
+.corazon {
+  position: absolute;
+  right: 35px; 
+  margin-top: -25px;
+  font-size: 20px;
+}
 h4 span{
   border-bottom: solid 3px $color-tertiary;
   margin: 10px;
@@ -192,28 +191,26 @@ h4 span{
   border-radius: $padding-20;
   padding: 10px;
   margin: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu {
  display: flex; 
 flex-wrap: nowrap;
 justify-content:space-between; 
-white-space: nowrap;
-text-overflow: ellipsis;
-overflow: hidden;
 width: 85%;
 height: 50px;
 }
-
- 
-
 .menu .display-flex   {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  white-space: nowrap;
   overflow: hidden;
-  white-space:nowrap;
-  text-overflow: ellipsis  ;
-  width: 100%;
+  text-overflow: ellipsis;
+ 
+  
 }
 .price {
   display: flex;
@@ -223,7 +220,7 @@ height: 50px;
   top: -10px;
   width: 6%;
   height: 30px;
-font-weight: 600;
+ font-weight: 600;
  }
 .price{
 position: relative;
@@ -238,14 +235,11 @@ left: 50px;
   padding: 5px 3px;
 }
 
-.btn{
-  text-align: center;
-}
 .prix {
     display: flex;
     justify-content: flex-start;
     margin-right: 50px;
-    margin-top: 5px;
+    margin-top: 15px;
   }
  
   @media (min-width: $tablette) {
@@ -271,35 +265,33 @@ left: 50px;
 }
 }
 @media (min-width: 1024px ) { 
+  #conteneur-restaurants {
+    margin: 0 auto;
+    max-width: 1400px;
+  }
   .conteneur-service {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap:Wrap;
     justify-content: space-between;
    margin: 0;
    }
   .menu  {
-    width:275px;
+   width:90%;
     height: 50px; 
-   
-   
 }
 }
 @media (min-width: $desktop){ 
 #conteneur-restaurants {
-  margin: 0 auto;
+  margin: 0;
 }
 .conteneur-service {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
-  overflow: hidden;
-  
- 
+  margin: 0;
 }
 .menu {
-width: 290px;;
-height: 50px;
-
-    
+width: 80%;
+height: 50px;    
 }
 }

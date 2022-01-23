@@ -21,6 +21,9 @@
   border: none;
   background:transparent; 
   color :#333333;
+  &:focus {
+    outline-style: none;
+  }
 }
 
 #introduction{ 
