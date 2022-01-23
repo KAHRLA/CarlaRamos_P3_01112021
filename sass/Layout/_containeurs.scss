@@ -199,18 +199,26 @@ h4 span{
  display: flex; 
 flex-wrap: nowrap;
 justify-content:space-between; 
+white-space:nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
 width: 85%;
 height: 50px;
 }
-.menu .display-flex   {
+.display-flex p{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width:100%; 
+}
+.menu .display-flex    {
   display: flex;
   flex-direction: column;
   justify-content: center;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
- 
-  
+   
 }
 .price {
   display: flex;
@@ -238,7 +246,7 @@ left: 50px;
 .prix {
     display: flex;
     justify-content: flex-start;
-    margin-right: 50px;
+    margin-right: 30px;
     margin-top: 15px;
   }
  
@@ -289,6 +297,7 @@ left: 50px;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
+  
 }
 .menu {
 width: 80%;

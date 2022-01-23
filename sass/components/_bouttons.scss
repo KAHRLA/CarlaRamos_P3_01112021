@@ -1,6 +1,7 @@
 @import '../Utils/variables';
 .btn_intro  {@include button_intro;
- } 
+margin: 70px;
+} 
 @media (min-width: $desktop){
  #btn_commande {@include btn_commande;
 }

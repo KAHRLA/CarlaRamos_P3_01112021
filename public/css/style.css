@@ -9,6 +9,7 @@
   font-weight: bolder;
   padding: 20px 20px;
   width: 60%;
+  margin: 70px;
 }
 .btn_intro :hover {
   background: linear-gradient(-5deg, #a16be0 20%, #ff93e1);
@@ -466,8 +467,18 @@ h4 span {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   width: 85%;
   height: 50px;
+}
+
+.display-flex p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 
 .menu .display-flex {
@@ -507,7 +518,7 @@ h4 span {
 .prix {
   display: flex;
   justify-content: flex-start;
-  margin-right: 50px;
+  margin-right: 30px;
   margin-top: 15px;
 }
 
@@ -627,6 +638,7 @@ h4 span {
   background-color: #99E2D0;
   transition: 300ms ease;
   margin-right: 30px;
+  width: calc(5% + 0px);
 }
 .menu:hover .price .icon i {
   animation: icon-rotation 1s;

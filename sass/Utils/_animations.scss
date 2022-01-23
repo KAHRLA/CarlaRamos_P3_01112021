@@ -52,7 +52,8 @@
     background-color:$color-tertiary;
     transition:  300ms ease;
     margin-right: 30px;
-    .icon i{
+    width: calc(5% + 0px );
+    .icon i{ 
     animation:  icon-rotation   1s;
     }
    }
