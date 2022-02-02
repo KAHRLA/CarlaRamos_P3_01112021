@@ -164,13 +164,20 @@ justify-content: center;
 }
 #section-menu h1 {
   margin-left:10px;
-  font-family: $font-logo; 
+  font-family: $font-logo;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;  
 }
+
 .page-name{
    margin: 0 10% 0 5%;
   padding-top: 30px;
   h1{
     margin : 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 .corazon {
@@ -262,9 +269,10 @@ left: 50px;
     }
     .conteneur-service {
       display: flex;
-      flex-wrap:wrap;
+      flex-wrap:nowrap;
       justify-content: space-between;
      margin: 0;
+     width: 80%;
     }
   .menu a{
     width:300px;
@@ -279,12 +287,13 @@ left: 50px;
   }
   .conteneur-service {
     display: flex;
-    flex-wrap:Wrap;
+    flex-wrap:nowrap;
     justify-content: space-between;
+    width: 90%;
    margin: 0;
    }
   .menu  {
-   width:90%;
+   width:60%;
     height: 50px; 
 }
 }
@@ -294,13 +303,14 @@ left: 50px;
 }
 .conteneur-service {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
+  width:  100%;
   margin: 0;
   
 }
 .menu {
-width: 80%;
+width: 70%;
 height: 50px;    
 }
 }
