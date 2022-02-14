@@ -1,21 +1,20 @@
-@import '../Utils/variables';
-.btn_intro  {@include button_intro;
-margin: 70px;
-} 
-@media (min-width: $desktop){
- #btn_commande {@include btn_commande;
-}
-.btn_intro {
-width: $medium;
-margin: 50px auto;
-}
+#introduction a {
+  @include btn_intro;
+  margin: 70px;
 }
 
-@media (min-width: $tablette){
-    #btn_commande {@include btn_commande;
-    }
-.btn_intro {
-width:$medium;
-margin: 50px auto;
+@media (min-width: $desktop) {
+  #introduction a{
+    @include btn_intro;
+    width: $medium;
+    margin: 50px auto;
+  }
 }
+
+@media (min-width: $tablette) {
+  #introduction a {
+    @include btn_intro;
+    width: $medium;
+    margin: 50px auto;
+  }
 }

@@ -1,55 +1,54 @@
 footer {
   background-color: black;
   padding: $padding-text;
- 
- }
- 
-.footer a, .footer i  {
- color: white;
-  }
- .logo-footer img
- {
+}
+
+.footer a,
+.footer i {
+  color: white;
+}
+.logo-footer img {
   width: 30%;
- margin: 5px;
- }
- .conteneur-pied  { 
-   font-weight: 700;
-   margin: $padding-text;
-   }
-   
-  .contact a {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   margin:$padding-text;  
- }
- 
- @media (min-width: $tablette) {
-  footer {
-  align-items: center;
-  height: 100px;
+  margin: 5px;
+}
+.conteneur-pied {
+  font-weight: 700;
+  margin: $padding-text;
+}
+
+.contact a {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: $padding-text;
+}
+
+@media (min-width: $tablette) {
+  footer {
+    align-items: center;
+    height: 100px;
+    display: flex;
   }
 
-  .footer-content{
+  .footer-content {
     display: flex;
     flex-direction: row;
   }
-  .logo-footer img
- {
-  width: 50%;
-  margin-left: 30px;
-  margin-top: 15px;
- }
- .conteneur-pied,   .contact a{
-   display: initial;
- align-items: flex-start;
- padding-right: 70px;
- }
-   }
-
-  @media (min-width:$desktop ) {
-     .contact a {
-      margin: 0;
-    }
+  .logo-footer img {
+    width: 50%;
+    margin-left: 30px;
+    margin-top: 15px;
   }
+  .conteneur-pied,
+  .contact a {
+    display: initial;
+    align-items: flex-start;
+    padding-right: 70px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .contact a {
+    margin: 0;
+  }
+}

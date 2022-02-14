@@ -1,48 +1,48 @@
-a{
-    text-decoration: none;
-   width: 50%;
+a {
+  text-decoration: none;
+  width: 50%;
 }
-#page-d-accueil{
-    font-family: $font-text;
-    margin: 0px;
-    padding: 0px;
+#page-d-accueil {
+  font-family: $font-text;
+  margin: 0px;
+  padding: 0px;
 }
-   
+
 /*---recherche input---*/
-#Belleville{
-    color: black;
-    font-weight: 600;
-    font-size: 14px;
-   padding: $padding-text;
-   width: 105px;
+#Belleville {
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+  padding: $padding-text;
+  width: 160px;
 }
-header p{ 
-    font-size: 38px;
-    font-weight: bold;
-    font-family : $font-logo;
-} 
-#section-menu a{
-    font-family: $font-text;
-    color: black;
-  }
-  
+header p {
+  font-size: 38px;
+  font-weight: bold;
+  font-family: $font-logo;
+}
+#section-menu  {
+  font-family: $font-text;
+}
+.menu a{
+  color: black;
+}
 #section-menu h1 {
-font-family: $font-logo;
-margin-left: 20px;
+  font-family: $font-logo;
+  margin-left: 20px;
 }
 
-.plat{
-font-weight: 700;
-margin: 0px;
+.plat {
+  font-weight: 700;
+  margin: 0px;
 }
-.compliment{
-    margin: 0px;
-    font-size: 14px;
-  }
+.compliment {
+  margin: 0px;
+  font-size: 14px;
+}
 
-.description{
-    color: black;
-    font-weight: bold;
-    margin: 5px;
-  }
-  
+.description {
+  color: black;
+  font-weight: bold;
+  margin: 5px;
+}

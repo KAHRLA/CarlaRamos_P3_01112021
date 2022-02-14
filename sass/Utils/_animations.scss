@@ -1,83 +1,80 @@
 @keyframes apparition-accueil {
   0% {
     transform: translateX(-9999px);
-}
-100% {
+  }
+  100% {
     transform: translateX(0);
-    }
+  }
 }
-.website{
+.website {
   margin: 0;
-  animation: apparition-accueil  1s 4s both;
+  animation: apparition-accueil 1s 4s both;
 }
 @keyframes home-opening {
   0% {
     transform: translateX(-9999px);
-}
-100% {
+  }
+  100% {
     transform: translateX(0);
-    }
+  }
 }
-.chargement-site{
+.chargement-site {
   animation: animation-off 1s 4s;
   transform-origin: top;
   animation-delay: 4s;
 }
-.chargement-logo{
+.chargement-logo {
   animation: icon-rotation 4s 0s both;
- 
 }
 @keyframes animation-off {
   to {
     transform: scale(0);
   }
 }
- .white-heart:hover{
+.white-heart:hover {
   opacity: 0;
 }
-   .white-heart:hover + .black-heart i{
-    background: linear-gradient( $color-secondary,$color-primary, );
-    background-clip: text;
-    -webkit-background-clip: text;
-    opacity:1;
-    transform: scale(1.3);
-    transition:all 300ms ease-in-out ;
-    & :hover {
-      opacity:1;
-      
-    }
+.white-heart:hover + .black-heart i {
+  background: linear-gradient($color-secondary, $color-primary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 1;
+  transform: scale(1.3);
+  transition: all 300ms ease-in-out;
+  & :hover {
+    opacity: 1;
   }
-   .menu:hover .price {
-    border-radius:0px 10px 10px 0px;
-    background-color:$color-tertiary;
-    transition:  300ms ease;
-    margin-right: 30px;
-    width: calc(5% + 0px );
-    .icon i{ 
-    animation:  icon-rotation   1s;
-    }
-   }
+}
+.menu:hover .price {
+  border-radius: 0px 10px 10px 0px;
+  background-color: $color-tertiary;
+  transition: 300ms ease;
+  margin-right: 30px;
+  width: calc(5% + 0px);
+  .icon i {
+    animation: icon-rotation 1s;
+  }
+}
 
-   @keyframes icon-rotation {
-    0% {
-      transform: rotate(0deg);
+@keyframes icon-rotation {
+  0% {
+    transform: rotate(0deg);
   }
   100% {
-      transform: rotate(-360deg);
+    transform: rotate(-360deg);
   }
-  }
-   .conteneur-service .menu{
-    animation: pogressive 3s;
+}
+.conteneur-service .menu {
+  animation: pogressive 3s;
+}
 
-   }
-   
-   @keyframes pogressive {
-0% {
-  transform: translateY(50%);
-  opacity: 0;
-} 
-100%{
-  transform: translateY(0%) ;
-  opacity: 1;
-}   
-   }
+@keyframes pogressive {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
